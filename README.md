@@ -6,17 +6,20 @@ The jupyter notebooks in this package depend on a few well-known Python packages
 
 | __modules__   | __description__     |
 | :---          | :---        |
-| pandas        | data table manipulation, often with data loaded from csv files |
 | numpy         | array manipulation and numerical analysis      |
+| scipy         | scientific computing    |
+| iminuit       | Minuit, the celebrated CERN function minimizer |
 | matplotlib    | a widely used plotting module for producing high quality plots |
-| scikit-learn  | easy to use machine learning toolkit |
+| emcee         | Markov chain Monte Carlo sampling |
+| joblib        | to save objects to a file and read them back into memory |
+| pandas        | data table manipulation, often with data loaded from csv files |
 | pytorch       | a powerful, flexible, machine learning toolkit |
+| scikit-learn  | easy to use machine learning toolkit |
 
 Also recommended are
 
 | __modules__   | __description__     |
 | :---          | :--- |
-| scipy         | scientific computing    |
 | sympy         | an excellent symbolic algebra module |
 
 The simplest way to install these packages is first to install miniconda (a slim version of Anaconda) on your laptop by following the instructions at:
@@ -33,7 +36,7 @@ conda update conda
 ```
 Assuming conda is properly installed and initialized on your laptop, you can create an environment, here we call it *sos*, containing the __root__ package from CERN, plus a large subset of the packages in the conda system, using the command>
 ```bash
-conda create -c conda-forge --name python3 root
+conda create -c conda-forge --name sos root
 ```
 Before pressing __y__ to continue with the installation, scan through the list of packages and identify which of the above are in the list. That way, you will know which ones are missing and need to be installed using the __conda install__ command.  In order to install missing packages, first be sure to choose the conda environment into which the package is to be installed. Activate the desired environment, by doing, for example,
 ```bash
@@ -97,13 +100,8 @@ This should download the package *INFN-SOS* to your current directory.
 
 The notebooks provide detailed background information and explanations and are well-commented.
 
-| __notebooks__                   | __description__     |
+| __folders__                   | __description__     |
 | :---          | :--- |
-00_generate_data.ipynb     | Create files data_01.db and data_02.db |
-| Notebooks using __scikit-learn__ |
-01_classification_sklearn.ipynb           | use __scikit-learn__ to classify the 2D data in data_01.db|
-| Notebooks using __PyTorch__  |
-01_classification.ipynb | classify the 2D data in data_01.db | 
-02_regression.ipynb | fit the 1D data in data_02.db |
-03_likelihood.ipynb | model a 1D 2-parameter likelihood function |
-04_reinforcement_learning.ipynb | tutorial on Q-learning |
+01_prob     | probability exercises |
+02_stats    | statistics exercises |
+03_ml       | machine learning exercises |
