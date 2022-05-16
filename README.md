@@ -11,6 +11,7 @@ The jupyter notebooks in this package depend on a few well-known Python packages
 | iminuit       | Minuit, the celebrated CERN function minimizer |
 | matplotlib    | a widely used plotting module for producing high quality plots |
 | tqdm          | progress monitor |
+| imageio       | to display images |
 | emcee         | Markov chain Monte Carlo sampling |
 | joblib        | to save objects to a file and read them back into memory |
 | pandas        | data table manipulation, often with data loaded from csv files |
