@@ -28,9 +28,10 @@ The simplest way to install these packages is first to install miniconda (a slim
 
 https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html
 
-I recommend installing miniconda3, which comes pre-packaged with Python 3.
+I recommend a __Regular installation__ of miniconda3, which comes pre-packaged with Python 3.
 
 In principle, software release systems such as Anaconda (__conda__ for short) make it possible to have several separate self-consistent named *environments* on a single machine, say your laptop. For example, you may need to use Python 3.8.x sometimes and Python 3.11.x at other times. If you install software without using *environments* there is the very real danger that the software on your laptop will become inconsistent. Anaconda (and its lightweight companion miniconda) provide a way to create a consistent software *environments* But, like all software, Anaconda is far from perfect and problems do sometimes arise!
+
 
 After installing miniconda3, It is a good idea to update conda before doing anything else using the command
 ```bash
@@ -74,10 +75,10 @@ https://jupyter.org/install
 
 
 ### 1. Download
-It is a good idea to organize your computer-based projects in a systematic way. For example, in your home directory (usually the area identified by the environment variable $HOME), you may wish to create a directory (i.e., folder) called __Projects__ and create within it a sub-directory called __Tutorials__ as follows
+It is a good idea to organize your computer-based projects in a systematic way. For example, in your home directory (usually the area identified by the environment variable $HOME), you may wish to create a directory (i.e., folder) called __Projects__
 ```bash
 cd
-mkdir -p Projects/Tutorials
+mkdir Projects
 ```
 In a terminal window dedicated to running the jupyter notebook app, do
 ```bash
@@ -87,10 +88,10 @@ jupyter notebook
 ```
 This will run the notebook in your browser and block the terminal window, which you can then iconize.
 
-In another terminal window, go to your Tutorials sub-directory
+In another terminal window, go to folder Projects
 ```bash
 cd
-cd Projects/Tutorials
+cd Projects
 ```
 and execute the command
 ```bash
