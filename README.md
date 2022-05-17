@@ -37,7 +37,7 @@ After installing miniconda3, It is a good idea to update conda before doing anyt
 ```bash
 conda update conda
 ```
-Assuming conda is properly installed and initialized on your laptop, you can create an environment, here we call it *sos*, containing the __root__ package from CERN, plus a large subset of the packages in the conda system, using the command>
+Assuming conda is properly installed and initialized on your laptop, you can create an environment, here we call it __sos__, containing the __root__ package from CERN, plus a large subset of the packages in the conda system, using the command>
 ```bash
 conda create -c conda-forge --name sos root
 ```
@@ -49,7 +49,9 @@ Later, in order to update root together with a consistent set of packages do
 ```bash
 conda update root
 ```
-taking care to do so in the desired conda environment, here __sos__. (Alas, the Mac is no longer the ``dream machine" it once was. After upgrading to macOS Monterey Version 12.3.1 and Xcode Version 3.2 on my M1 MacBook Air, __root__ no longer works on my Mac! I hope you have better luck.)  
+taking care to do so in the desired conda environment, here __sos__. 
+
+(Unfortunately, after upgrading to macOS Monterey Version 12.3.1 and Xcode Version 3.2 on my MacBook Air with the M1 chip, __root__ no longer works on my Mac! I hope you have better luck.)  
 
 ### Other Packages
 
