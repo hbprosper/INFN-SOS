@@ -79,7 +79,7 @@ and
 https://jupyter.org/install
 
 
-## 1. Download
+## Download
 It is a good idea to organize your computer-based projects in a systematic way. For example, in your home directory (usually the area identified by the environment variable $HOME), you may wish to create a directory (i.e., folder) called __Projects__
 ```bash
 cd
@@ -104,9 +104,9 @@ git clone https://github.com/hbprosper/INFN-SOS
 ```
 This should download the package *INFN-SOS* to your current directory.
 
-## 2. Notebooks
+## Notebooks
 
-The notebooks provide detailed background information and explanations and are well-commented.
+The notebooks provide detailed background information and explanations.
 
 | __folders__                   | __description__     |
 | :---          | :--- |
